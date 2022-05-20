@@ -1,1 +1,33 @@
 Hi Its Demo file yarr donrwary
+
+Hey here are my new changes
+
+public class landingDatacode {
+    @AuraEnabled
+    Public static list<A_Customer__c> getData(){
+        list<A_Customer__c> customersData = [select Id,Name,A_Customer_Address__c,A_customer_Phone_Number__c FROM A_Customer__c Order By CreatedDate DESC LIMIT 10];
+        return customersData;
+    }
+    @AuraEnabled
+    Public static list<A_Customer__c> SearchData(string newvalue){
+        string str = '%'+newvalue+'%';
+        list<A_Customer__c> dataofcus = [select Id,Name,A_Customer_Address__c,A_customer_Phone_Number__c FROM A_Customer__c 
+                                         
+                                         WHERE NAME LIKE: str OR A_customer_Phone_Number__c LIKE: str Order By CreatedDate DESC LIMIT 10];
+        return dataofcus;
+    }
+    @AuraEnabled
+    public static void createCustomer(string name,string phone,string cemail){
+        A_Customer__c cust = new A_Customer__c();
+        cust.Name = name;
+        cust.A_customer_Phone_Number__c = phone;
+        cust.A_Customer_Email__c = cemail;
+        Insert cust;
+    }
+    @AuraEnabled
+    Public static A_Customer__c getCustomerDetails(string currentRecId){
+        A_Customer__c customersData = [select Id,Name,A_Customer_Address__c,A_customer_Phone_Number__c,A_Customer_Email__c,A_customer_City__c,A_Customer_State__c FROM A_Customer__c WHERE ID=:currentRecId];
+        return customersData;
+    }
+}
+ again changes are there
