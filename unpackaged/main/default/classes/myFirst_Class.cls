@@ -19,5 +19,11 @@ Public class myFirst_Class {
         integer age = 30;
         return age;
     }
+    
+    public static string getuserdata(){
+        
+        string Name = 'Ganga';
+        return Name;
+    }
 	
 }
