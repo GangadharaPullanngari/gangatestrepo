@@ -1,0 +1,23 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <div style="background:aquamarine;height:200px">
+        Welcome to Relience Trends Store! <br/><br/>
+        
+        <lightning:input label="Enter your name"></lightning:input>
+        <lightning:button label="click"/>
+    </div> 
+    <div style="background:white;height:100px">
+        it is world of shoping <br/><br/>
+        
+        <lightning:progressBar value="70" size="large" />
+        
+        <lightning:progressIndicator currentStep="3" type="base" hasError="true" variant="base">
+            <lightning:progressStep label="Step 1" value="1"/>
+            <lightning:progressStep label="Step 2" value="2"/>
+            <lightning:progressStep label="Step 3" value="3"/>
+            <lightning:progressStep label="Step 4" value="4"/>
+        </lightning:progressIndicator>
+        
+        <c:mySecondComponent></c:mySecondComponent>
+        
+    </div>     
+</aura:component>
