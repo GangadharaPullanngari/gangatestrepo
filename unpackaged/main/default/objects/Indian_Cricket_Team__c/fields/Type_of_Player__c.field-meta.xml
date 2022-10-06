@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Player__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Player</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Batsmen</fullName>
+                <default>false</default>
+                <label>Batsmen</label>
+            </value>
+            <value>
+                <fullName>Bowler</fullName>
+                <default>false</default>
+                <label>Bowler</label>
+            </value>
+            <value>
+                <fullName>All Rounder</fullName>
+                <default>false</default>
+                <label>All Rounder</label>
+            </value>
+            <value>
+                <fullName>Wicket Keeper</fullName>
+                <default>false</default>
+                <label>Wicket Keeper</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
