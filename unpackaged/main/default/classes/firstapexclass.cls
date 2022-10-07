@@ -11,8 +11,10 @@ public class firstapexclass {
             
             acc.Name='Uday';
             acc.phone='8904514374';
-            
+            acc.phone='1234567';
+            acc.Name='Ganga';
             system.debug('acc'+acc);
+            
             
         }
     }
