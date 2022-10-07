@@ -51,6 +51,7 @@ public class joshitestclass {
  acc= [select id,Name from Account where Name='Gangaraju'];
 delete acc;
      }
+    // for the project of pathway we doing changes
     public static void method5(){
         List<Account> acc = new List<Account>();
  acc= [select id,Name from Account where Name='Gopi'];
